@@ -60,11 +60,17 @@ static func prompt(title: String?, message: String?, textFieldConfiguration: ((U
 
 #### Usage
 ```swift
-let alert = DialogKit.prompt(title: "This is a question?", message: "But you have to type the answer 😳", textFieldConfiguration: { textField in
-    textField.placeholder = "This is a placeholder. Mental."
-}, completionHandler: { _, textField in
-    print("The answer was the friends we made along the way, but you said \(textField.text)")
-}, cancelHandler: nil)
+let alert = DialogKit.prompt(
+    title: "This is a question?", 
+    message: "But you have to type the answer 😳", 
+        textFieldConfiguration: { textField in
+        textField.placeholder = "This is a placeholder. Mental."
+    }, 
+    completionHandler: { _, textField in
+        print("The answer was the friends we made along the way, but you said \(textField.text)")
+    }, 
+    cancelHandler: nil
+)
 
 self.present(alert, animated: true, completion: nil)
 ```
