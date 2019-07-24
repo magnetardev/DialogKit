@@ -10,7 +10,8 @@ In the files that you want to use it in, simply use:
 ```swift
 import DialogKit
 ```
-
+## Functions
+---
 ### Alert
 A simple alert.
 
@@ -28,6 +29,7 @@ let alert = DialogKit.alert(title: "This is a Title", message: "This is a messag
 
 self.present(alert, animated: true, completion: nil)
 ```
+---
 
 ### Confirm
 A simple confirmation dialog.
@@ -49,6 +51,7 @@ let alert = DialogKit.confirm(title: "This is a question?", message: "Are you su
 self.present(alert, animated: true, completion: nil)
 ```
 
+---
 ### Prompt
 A simple prompt.
 
@@ -75,6 +78,7 @@ let alert = DialogKit.prompt(
 self.present(alert, animated: true, completion: nil)
 ```
 
+---
 ### Action Sheet
 A simple action sheet.
 
