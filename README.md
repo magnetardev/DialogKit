@@ -13,7 +13,7 @@ In the files that you want to use it in, simply use:
 import DialogKit
 ```
 ## Functions
----
+
 ### Alert
 A simple alert.
 
