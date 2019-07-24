@@ -20,7 +20,7 @@ A simple alert.
 #### Definition
 
 ```swift
-static func alert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func alert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
@@ -39,7 +39,7 @@ A simple confirmation dialog.
 #### Definition
 
 ```swift
-static func confirm(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func confirm(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
@@ -60,7 +60,7 @@ A simple prompt.
 #### Definition
 
 ```swift
-static func prompt(title: String?, message: String?, textFieldConfiguration: ((UITextField) -> Void)?, completionHandler: ((UIAlertAction, UITextField) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func prompt(title: String?, message: String?, textFieldConfiguration: ((UITextField) -> Void)?, completionHandler: ((UIAlertAction, UITextField) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
@@ -87,7 +87,7 @@ A simple action sheet.
 #### Definition
 
 ```swift
-static func actionSheet(title: String?, message: String?, actions: [UIAlertAction]?, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func actionSheet(title: String?, message: String?, actions: [UIAlertAction]?, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
