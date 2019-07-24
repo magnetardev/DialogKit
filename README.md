@@ -4,7 +4,9 @@ DialogKit makes it simplier to build UIAlertControllers.
 
 ## Installation
 Install via the Swift Package Manager using this URL:
-```https://github.com/magnetardev/DialogKit.git```
+```
+https://github.com/magnetardev/DialogKit.git
+```
 
 In the files that you want to use it in, simply use:
 ```swift
