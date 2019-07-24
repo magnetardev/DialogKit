@@ -20,7 +20,7 @@ A simple alert.
 #### Definition
 
 ```swift
-public func DKAlert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKAlert(title: String? = nil, message: String? = nil, completionHandler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController
 ```
 
 #### Example Usage
@@ -39,7 +39,7 @@ A simple confirmation dialog.
 #### Definition
 
 ```swift
-public func DKConfirm(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKConfirm(title: String? = nil, message: String? = nil, completionHandler: ((UIAlertAction) -> Void)? = nil, cancelHandler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController
 ```
 
 #### Example Usage
@@ -60,7 +60,7 @@ A simple prompt.
 #### Definition
 
 ```swift
-public func DKPrompt(title: String?, message: String?, textFieldConfiguration: ((UITextField) -> Void)?, completionHandler: ((UIAlertAction, UITextField) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKPrompt(title: String? = nil, message: String? = nil, textFieldConfiguration: ((UITextField) -> Void)? = nil, completionHandler: ((UIAlertAction, UITextField) -> Void)? = nil, cancelHandler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController
 ```
 
 #### Example Usage
@@ -87,7 +87,7 @@ A simple action sheet.
 #### Definition
 
 ```swift
-public func DKActionSheet(title: String?, message: String?, actions: [UIAlertAction]?, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKActionSheet(title: String? = nil, message: String? = nil, actions: [UIAlertAction]? = nil, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController
 ```
 
 #### Example Usage
