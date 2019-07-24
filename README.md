@@ -20,12 +20,12 @@ A simple alert.
 #### Definition
 
 ```swift
-public func alert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKAlert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
 ```swift
-let alert = DKDialog.alert(title: "This is a Title", message: "This is a message", completionHandler: { _ in
+let alert = DKAlert(title: "This is a Title", message: "This is a message", completionHandler: { _ in
     print("Alert dismissed")
 })
 
@@ -39,12 +39,12 @@ A simple confirmation dialog.
 #### Definition
 
 ```swift
-public func confirm(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKConfirm(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
 ```swift
-let alert = DKDialog.confirm(title: "This is a question?", message: "Are you sure?", completionHandler: { _ in
+let alert = DKConfirm(title: "This is a question?", message: "Are you sure?", completionHandler: { _ in
     print("You tapped OK.")
 }, cancelHandler: { _ in
     print("You cancelled it.")
@@ -60,12 +60,12 @@ A simple prompt.
 #### Definition
 
 ```swift
-public func prompt(title: String?, message: String?, textFieldConfiguration: ((UITextField) -> Void)?, completionHandler: ((UIAlertAction, UITextField) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKPrompt(title: String?, message: String?, textFieldConfiguration: ((UITextField) -> Void)?, completionHandler: ((UIAlertAction, UITextField) -> Void)?, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
 ```swift
-let alert = DKDialog.prompt(
+let alert = DKPrompt(
     title: "This is a question?", 
     message: "But you have to type the answer 😳", 
     textFieldConfiguration: { textField in
@@ -87,12 +87,12 @@ A simple action sheet.
 #### Definition
 
 ```swift
-public func actionSheet(title: String?, message: String?, actions: [UIAlertAction]?, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
+public func DKActionSheet(title: String?, message: String?, actions: [UIAlertAction]?, cancelButton: Bool? = true, cancelHandler: ((UIAlertAction) -> Void)?) -> UIAlertController
 ```
 
 #### Example Usage
 ```swift
-let alert = DKDialog.actionSheet(
+let alert = DKActionSheet(
     title: "This is an action sheet.",
     message: nil, 
     actions: [
