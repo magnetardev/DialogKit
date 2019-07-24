@@ -25,7 +25,7 @@ public func alert(title: String?, message: String?, completionHandler: ((UIAlert
 
 #### Example Usage
 ```swift
-let alert = DialogKit.alert(title: "This is a Title", message: "This is a message", completionHandler: { _ in
+let alert = DKDialog.alert(title: "This is a Title", message: "This is a message", completionHandler: { _ in
     print("Alert dismissed")
 })
 
@@ -44,7 +44,7 @@ public func confirm(title: String?, message: String?, completionHandler: ((UIAle
 
 #### Example Usage
 ```swift
-let alert = DialogKit.confirm(title: "This is a question?", message: "Are you sure?", completionHandler: { _ in
+let alert = DKDialog.confirm(title: "This is a question?", message: "Are you sure?", completionHandler: { _ in
     print("You tapped OK.")
 }, cancelHandler: { _ in
     print("You cancelled it.")
@@ -65,7 +65,7 @@ public func prompt(title: String?, message: String?, textFieldConfiguration: ((U
 
 #### Example Usage
 ```swift
-let alert = DialogKit.prompt(
+let alert = DKDialog.prompt(
     title: "This is a question?", 
     message: "But you have to type the answer 😳", 
     textFieldConfiguration: { textField in
@@ -92,7 +92,7 @@ public func actionSheet(title: String?, message: String?, actions: [UIAlertActio
 
 #### Example Usage
 ```swift
-let alert = DialogKit.actionSheet(
+let alert = DKDialog.actionSheet(
     title: "This is an action sheet.",
     message: nil, 
     actions: [

@@ -1,6 +1,6 @@
 import UIKit
 
-struct DialogKit {
+public struct DKDialog {
     public func alert(title: String?, message: String?, completionHandler: ((UIAlertAction) -> Void)?) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: completionHandler))
